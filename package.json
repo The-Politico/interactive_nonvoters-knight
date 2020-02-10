@@ -1,38 +1,41 @@
 {
-  "name": "interactive_nonvoters-knight",
+  "name": "interactive_iowa-caucus-explainer",
   "version": "1.0.0",
-  "description": "",
+  "description": "Iowa Caucus 2020 | How they work | Why we still do them",
   "main": "index.js",
   "pib": {
     "template": "dynamic",
-    "id": "UVnFKwiU",
-    "pageName": "nonvoters-knight",
+    "id": "V7xtaYoK",
+    "pageName": "Iowa Caucus 2020 | How they work | Why we still do them",
     "siteSection": "politics",
     "pageType": "interactives",
     "adUnitSection": "politics",
     "freePaidContent": "free",
     "opinion": false,
-    "site": "core",
-    "publishPath": "interactives/2020/nonvoters-knight/",
-    "published": null,
+    "publishPath": "interactives/2020/iowa-caucus-how-they-work/",
+    "published": "2020-01-16T10:00:00.094Z",
     "updated": null,
     "authors": [
       {
-        "link": "https://www.politico.com/",
-        "name": "Polly Politico"
+        "link": "https://www.twitter.com/beatricezjin",
+        "name": "Beatrice Jin"
       }
     ]
   },
   "dependencies": {
+    "@politico/graphics-kit": "^1.0.3",
+    "@politico/interactive-style": "1.5.5",
+    "d3": "^5.15.0",
     "politico-style": "3.0.16",
-    "@politico/interactive-style": "1.6.0",
-    "react-markdown": "4.1.0",
     "react": "16.6.3",
-    "react-helmet": "5.2.1"
+    "react-dom": "^16.12.0",
+    "react-helmet": "5.2.1",
+    "react-markdown": "4.1.0",
+    "react-scrollama": "^1.0.2"
   },
   "devDependencies": {
-    "@politico/interactive-bin": "0.1.14",
     "@politico/eslint-config-interactives": "latest",
+    "@politico/interactive-bin": "0.1.14",
     "eslint": "latest"
   },
   "scripts": {

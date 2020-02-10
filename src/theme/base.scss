@@ -1,1 +1,122 @@
 @import '~@politico/interactive-style/theme.scss';
+
+p, h3 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+div.share {
+  a {
+    color: white !important;
+  }
+}
+p.category {
+  margin-bottom: 0;
+  a {
+    color: $politico-red;
+  }
+}
+
+p.dek {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.info p {
+  font-family: $din;
+  a {
+    color: $satan;
+  }
+}
+
+h3.main-sub {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 60px auto 0px;
+  @media screen and (max-width: 800px){
+    font-size: 1.4rem;
+    margin: 40px auto 0px;
+  }
+}
+
+hr.underscore {
+  text-align: center;
+  display: block;
+  width: 50px;
+  border-top: 5px solid $satan;
+  @media screen and (max-width: 800px){
+    margin: 15px auto 30px;
+  }
+}
+
+p.dek {
+  font-family: $din;
+}
+
+div.sticky-container {
+  position: relative;
+  display: block;
+  padding-bottom: 100px;
+  @media screen and (max-width: 800px){
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: 800px){
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1300px;
+  }
+}
+
+div.step-container {
+  margin: 600px auto;
+  z-index: 9999;
+  position: relative;
+  background-color: white;
+  padding: 5px 10px;
+  border: 1px solid $button;
+  width: 90vw;
+  padding: 20px 20px 10px;
+  @media screen and (min-width: 800px){
+    width: 475px;
+    padding: 30px 40px;
+    margin: 600px 0;
+    box-shadow: 2px 2px 5px $button;
+    p {
+      margin: 7px 0 0 0;
+      font-family: $din;
+      line-height: 1.5;
+    }
+    &.first {
+      margin: -400px 0 800px;
+    }
+  }
+  @media screen and (min-width: 1550px){
+    padding: 30px 40px 30px 0px;
+    box-shadow: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 200px 0 800px;
+    &.first {
+      margin: -400px 0 800px;
+    }
+  }
+  &.last {
+    margin-bottom: 200px;
+  }
+
+  div.disclaimer {
+    margin-top: 30px;
+    p {
+      font-size: .8rem;
+      color: $gray;
+    }
+  }
+
+
+}
+
+img.topper {
+  width: 200px;
+  margin: 0 auto 10px;
+  display: block;
+}

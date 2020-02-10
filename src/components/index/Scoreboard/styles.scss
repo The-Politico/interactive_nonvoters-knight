@@ -1,0 +1,103 @@
+@import '~politico-style/scss/base/main.scss';
+
+$A: #5DAED4;
+$B: #8ABDC0;
+$C: #bba8bf;
+$D: #FFD682;
+
+.component :global {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 20;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @media screen and (max-width: 800px){
+    padding-top: 1px;
+    padding-bottom: 0;
+  }
+  table {
+    margin: 10px auto;
+    top: 10px;
+    font-size: .8rem;
+    @media screen and (min-width: 800px){
+      margin: 0 0 0 auto;
+    }
+    tr {
+      transition: opacity .5s;
+      -webkit-transition: opacity .5s;
+      &.show-true {
+        opacity: 1;
+      }
+      &.show-false {
+        opacity: 0;
+      }
+    }
+    td, th {
+      padding: 3px 3px;
+      text-align: center;
+      line-height: 1.1;
+      @media screen and (max-width: 800px){
+        padding: 3px 7px;
+      }
+    }
+    td {
+      &.nb-label {
+        text-transform: uppercase;
+        font-size: .7rem;
+        letter-spacing: 2.5px;
+        text-align: right;
+        @media screen and (max-width: 800px){
+          font-size: .6rem;
+          letter-spacing: 1px;
+        }
+      }
+      &.nb {
+        //font-weight: bold;
+        //font-size: 1.3rem;
+        padding: 1px 0px;
+      }
+      &.pct {
+        //font-weight: lighter;
+        //font-size: .8rem;
+      }
+      &.del {
+        font-weight: bold;
+      }
+      &.nb-A {
+        color: $A;
+      }
+      &.nb-B {
+        color: $B;
+      }
+      &.nb-C {
+        color: $C;
+      }
+      &.nb-D {
+        color: $D;
+      }
+      span.ex {
+        color: $no;
+      }
+      span.check {
+        color: $yes;
+      }
+
+    }
+    th {
+      span.desktop {
+        @media screen and (max-width: 800px){
+          display: none;
+        }
+      }
+    }
+    @media screen and (min-width: 800px){
+      font-size: 1rem;
+      td, th {
+        padding: 5px 10px;
+      }
+    }
+  }
+}

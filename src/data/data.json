@@ -1,1 +1,21 @@
-{}
+[{
+  "name": "flare",
+  "children": [{
+      "name": "candidates",
+      "children": [{
+          "name": "candidate A",
+          "value": 10
+        }, {
+          "name": "candidate B",
+          "value": 10
+        }, {
+          "name": "candidate C",
+          "value": 10
+        }, {
+          "name": "candidate C",
+          "value": 20
+        }
+      ]
+    }
+  ]
+}]

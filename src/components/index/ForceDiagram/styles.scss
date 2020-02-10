@@ -1,0 +1,83 @@
+@import '~politico-style/scss/base/main.scss';
+
+$A: #5DAED4;
+$B: #8ABDC0;
+$C: #bba8bf;
+$D: #FFD682;
+
+.component :global {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 130px;
+  z-index: 10;
+  @media screen and (max-width: 800px){
+    top: 100px;
+  }
+  svg {
+    border: 8px solid $satan;
+    background-image: url('https://www.politico.com/interactives/uploads/image-service/2020/1/7/d9f5eb6e99.png');
+    display: block;
+    margin: 0 auto;
+    @media screen and (max-width: 800px){
+      border: 5px solid $satan;
+    }
+    @media screen and (min-width: 800px){
+      margin: 0 0 0 auto;
+    }
+  }
+  text.candidate-label, text.candidate-label-shadow {
+    text-anchor: middle;
+    font-size: .9rem;
+    font-family: $din;
+    font-weight: bold;
+  }
+
+  text.candidate-label-shadow {
+    fill: white;
+    stroke: rgba(255, 255, 255, .9);
+    stroke-width: 3px;
+  }
+
+  circle {
+    position: relative;
+    z-index: 200;
+  }
+
+  circle.no-fill {
+    fill: none;
+  }
+
+  text.no-fill, text.pre {
+    display: none;
+  }
+
+  circle.fill-no-fill, circle.fill-pre {
+    fill: $gray;
+  }
+
+  circle.fill-A, text.A {
+    fill: $A;
+  }
+
+  circle.fill-B, text.B {
+    fill: $B;
+  }
+
+  circle.fill-C, text.C {
+    fill: $C;
+  }
+
+  circle.fill-D, text.D {
+    fill: $D;
+  }
+
+  circle.eye1, circle.eye2 {
+    fill: black;
+  }
+
+  path.mouth {
+    fill: none;
+    stroke: black;
+    stroke-width: 1px;
+  }
+}
