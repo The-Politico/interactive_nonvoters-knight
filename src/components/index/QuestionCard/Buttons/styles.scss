@@ -1,0 +1,24 @@
+@import '~@politico/interactive-style/vars.scss';
+
+.component :global {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  div.choice {
+    border: 1px solid $button;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px $button;
+    margin: 0px 5px 10px 5px;
+    padding: 1px 10px;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 2px 2px 5px $gray;
+    }
+    p {
+      font-family: $din;
+      margin-bottom: 0;
+      pointer-events: none;
+    }
+  }
+}

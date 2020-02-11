@@ -1,0 +1,131 @@
+@import '~@politico/interactive-style/theme.scss';
+
+$Biden: #6BAE80; // dark green
+$Warren: #7957B4; // dark purple
+$Buttigieg: #FFD682; // yellow
+$Sanders: #B41E61; // magenta
+$Yang: #FFB2CB; // pink
+$Steyer: #F68A41; //orange
+$Klobuchar: #9AD3FC; // light blue
+$Bloomberg: #D9C3A5; // tan
+$Gabbard: #C3F4CD; // light green
+$other: $gray;
+
+.styles :global {
+  text.axis-label {
+    font-family: $din;
+    font-size: .85rem;
+    text-anchor: middle;
+    fill: $satan;
+    &.axis-label-0 {
+      text-anchor: start;
+    }
+    &.axis-label-2 {
+      text-anchor: end;
+    }
+  }
+
+  path.midline {
+    stroke: $gray;
+    stroke-width: 1px;
+    &.center {
+      stroke-dasharray: 2 1;
+    }
+  }
+
+   text.units {
+     font-family: $din;
+     text-anchor: start;
+     font-size: .95rem;
+     //letter-spacing: 2px;
+     font-weight: bold;
+     //text-transform: uppercase;
+     &.units-2 {
+       text-anchor: end;
+     }
+   }
+
+   circle {
+     stroke: none;
+     stroke-width: 0;
+     cursor: pointer;
+     &.stroked {
+       stroke: black;
+       stroke-width: 2px;
+     }
+     &.winner-Biden {
+       fill: $Biden;
+     }
+     &.winner-Bloomberg {
+       fill: $Bloomberg;
+     }
+     &.winner-Buttigieg {
+       fill: $Buttigieg;
+     }
+     &.winner-Gabbard {
+       fill: $Gabbard;
+     }
+     &.winner-Klobuchar{
+       fill: $Klobuchar;
+     }
+     &.winner-Sanders {
+       fill: $Sanders;
+     }
+     &.winner-Steyer {
+       fill: $Steyer;
+     }
+     &.winner-Warren {
+       fill: $Warren;
+     }
+     &.winner-Yang {
+       fill: $Yang;
+     }
+     &.winner-other {
+       fill: $other;
+     }
+   }
+
+   p.legend {
+     font-family: $din;
+     display: block;
+     font-size: .9rem;
+     margin-right: 20px;
+     span {
+       width: 10px;
+       height: 10px;
+       border-radius: 10px;
+       display: inline-block;
+
+       &.Biden {
+         background-color: $Biden;
+       }
+       &.Bloomberg {
+         background-color: $Bloomberg;
+       }
+       &.Buttigieg {
+         background-color: $Buttigieg;
+       }
+       &.Gabbard {
+         background-color: $Gabbard;
+       }
+       &.Klobuchar{
+         background-color: $Klobuchar;
+       }
+       &.Sanders {
+         background-color: $Sanders;
+       }
+       &.Steyer {
+         background-color: $Steyer;
+       }
+       &.Warren {
+         background-color: $Warren;
+       }
+       &.Yang {
+         background-color: $Yang;
+       }
+       &.Others {
+         background-color: $other;
+       }
+     }
+   }
+}
