@@ -27,7 +27,9 @@
     p {
       font-family: $din;
       margin-bottom: 0;
+      margin-top: 0 !important;
       pointer-events: none;
+    
     }
   }
 }

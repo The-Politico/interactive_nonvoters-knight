@@ -13,16 +13,28 @@ class Buttons extends React.Component {
     };
   }
 
-  chooseAnswer = (name) => {
-    const { userChoice } = this.state;
-    this.setState({ userChoice: name });
+  changeAnswer = (a) => {
+    const {clicked, userChoice} = this.state;
+    function determineState(click, choice, data){
+      if (!clicked) { return [true, data] }
+      else {
+        if (userChoice === null) { return [true, data] }
+        else if (userChoice === data) { return [false, null]}
+        else { return [true, data]}
+      }
+    }
+    const results =  determineState(clicked, userChoice, a);
+
+    this.setState({
+      clicked: results[0],
+      userChoice: results[1],
+    })
   }
 
   render () {
     const { data } = this.props;
     const { clicked, userChoice } = this.state;
 
-    console.log(data)
     return (
       <div className={styles.component + ' class-name'}>
         { data.map((a, i) =>
@@ -30,14 +42,8 @@ class Buttons extends React.Component {
             key={`key${i}`}
             role='button'
             tabIndex='-1'
-            onKeyPress={() => this.setState({
-              clicked: clicked ? false : true,
-              userChoice: clicked ? null : a,
-            })}
-            onClick={() => this.setState({
-              clicked: clicked ? false : true,
-              userChoice: clicked ? null : a,
-            })}
+            onKeyPress={() => this.changeAnswer(a)}
+            onClick={() => this.changeAnswer(a)}
             className={`
               answer
               clicked-${userChoice === a}

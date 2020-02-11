@@ -1,6 +1,18 @@
+@import '~@politico/interactive-style/vars.scss';
+
 .component :global {
   div.container {
-    margin: 100px auto 50px;
+    margin: 120px auto 50px;
+    border-radius: 5px;
+    border: 1px solid $button;
+    box-shadow: 2px 2px 5px $button;
+    max-width: 675px;
+    padding: 30px 20px 30px;
+    @media screen and (max-width: 600px){
+      width: 95%;
+      padding: 30px 10px;
+      margin: 100px auto 30px;
+    }
     img {
       width: 25px;
       display: block;
@@ -13,6 +25,9 @@
     h3 {
       font-size: 1.6rem;
       text-align: center;
+      @media screen and (max-width: 600px){
+        font-size: 1.4rem;
+      }
     }
   }
 }

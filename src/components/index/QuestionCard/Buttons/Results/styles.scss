@@ -10,12 +10,6 @@
     font-family: $din;
     span {
       font-weight: bold;
-      // &.voter-true {
-      //   color: $yes;
-      // }
-      // &.voter-false {
-      //   color: $no;
-      // }
     }
   }
   h4 {
@@ -23,6 +17,10 @@
     margin: 0 auto;
     font-weight: normal;
     margin-bottom: 0px;
+    @media screen and (max-width: 600px){
+      width: 90%;
+      font-size: 1.1rem;
+    }
   }
   div.bar {
     height: 20px;
@@ -30,6 +28,9 @@
     margin: 2px auto 2px;
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 600px){
+      width: 90%;
+    }
     div.segment {
       height: 20px;
       border-radius: 4px;
@@ -50,13 +51,17 @@
     justify-content: center;
     max-width: 450px;
     margin: 0 auto 10px;
+    @media screen and (max-width: 600px){
+      width: 90%;
+    }
     p {
       font-family: $din;
       margin-bottom: 0;
       @include color;
       font-size: .8rem;
-      // text-transform: uppercase;
-      // letter-spacing: 1px;
+      @media screen and (max-width: 600px){
+        margin-top: 0;
+      }
       &.bold-true {
         font-weight: bold;
       }
