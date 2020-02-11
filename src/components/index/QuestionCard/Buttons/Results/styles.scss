@@ -1,4 +1,6 @@
 @import '~@politico/interactive-style/vars.scss';
+@import './../../../../../theme/mixins.scss';
+
 
 .component :global {
   width: 100%;
@@ -7,11 +9,55 @@
     text-align: center;
     font-family: $din;
     span {
-      &.voter-true {
-        color: $yes;
+      font-weight: bold;
+      // &.voter-true {
+      //   color: $yes;
+      // }
+      // &.voter-false {
+      //   color: $no;
+      // }
+    }
+  }
+  h4 {
+    max-width: 550px;
+    margin: 0 auto;
+    font-weight: normal;
+    margin-bottom: 0px;
+  }
+  div.bar {
+    height: 20px;
+    max-width: 550px;
+    margin: 2px auto 2px;
+    display: flex;
+    justify-content: center;
+    div.segment {
+      height: 20px;
+      border-radius: 4px;
+      @include background-color;
+      p {
+        font-family: $din;
+        margin-bottom: 0;
+        text-align: center;
+        color: white;
       }
-      &.voter-false {
-        color: $no;
+    }
+  }
+
+  div.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 550px;
+    margin: 0 auto 10px;
+    p {
+      font-family: $din;
+      margin-bottom: 0;
+      @include color;
+      font-size: .9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      &.bold-true {
+        font-weight: bold;
       }
     }
   }

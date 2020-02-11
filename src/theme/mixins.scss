@@ -1,0 +1,34 @@
+$choice1: #75CCCA;
+$choice2: #EF8B67;
+$choice3: #B41E61;
+$choice4: #775180;
+
+@mixin background-color {
+  &.choice-0 {
+    background-color: $choice1;
+  }
+  &.choice-1 {
+    background-color: $choice2;
+  }
+  &.choice-2 {
+    background-color: $choice3;
+  }
+  &.choice-3  {
+    background-color: $choice4;
+  }
+}
+
+@mixin color {
+  &.stat-0 {
+    color: $choice1;
+  }
+  &.stat-1 {
+    color: $choice2;
+  }
+  &.stat-2 {
+    color: $choice3;
+  }
+  &.stat-3  {
+    color: $choice4;
+  }
+}
