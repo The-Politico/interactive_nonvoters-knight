@@ -7,7 +7,6 @@ class Results extends React.Component {
   render () {
     const {data, userChoice} = this.props;
     const voter = userChoice !== null ? +userChoice.Voter > +userChoice.Nonvoter : null;
-    console.log(data, userChoice)
 
     return (
       <div className={styles.component + ' class-name'}>

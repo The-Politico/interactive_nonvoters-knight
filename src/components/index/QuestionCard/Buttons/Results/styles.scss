@@ -19,20 +19,21 @@
     }
   }
   h4 {
-    max-width: 550px;
+    max-width: 450px;
     margin: 0 auto;
     font-weight: normal;
     margin-bottom: 0px;
   }
   div.bar {
     height: 20px;
-    max-width: 550px;
+    max-width: 450px;
     margin: 2px auto 2px;
     display: flex;
     justify-content: center;
     div.segment {
       height: 20px;
       border-radius: 4px;
+      border: 1px solid white;
       @include background-color;
       p {
         font-family: $din;
@@ -47,15 +48,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 550px;
+    max-width: 450px;
     margin: 0 auto 10px;
     p {
       font-family: $din;
       margin-bottom: 0;
       @include color;
-      font-size: .9rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
+      font-size: .8rem;
+      // text-transform: uppercase;
+      // letter-spacing: 1px;
       &.bold-true {
         font-weight: bold;
       }

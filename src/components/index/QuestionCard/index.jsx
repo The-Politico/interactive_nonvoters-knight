@@ -13,6 +13,7 @@ class QuestionCard extends React.Component {
       <div className={styles.component + ' class-name'}>
         <div className='container'>
           <div className='left-side'>
+            <img src={`https://www.politico.com/interactives/uploads/image-service/${copy.Image}.png`} />
             <h5> {index} </h5>
             <h3> {data[0].Question} </h3>
           </div>
