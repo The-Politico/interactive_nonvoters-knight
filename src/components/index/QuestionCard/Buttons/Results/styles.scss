@@ -1,0 +1,18 @@
+@import '~@politico/interactive-style/vars.scss';
+
+.component :global {
+  width: 100%;
+  p.summary {
+    margin-top: 10px;
+    text-align: center;
+    font-family: $din;
+    span {
+      &.voter-true {
+        color: $yes;
+      }
+      &.voter-false {
+        color: $no;
+      }
+    }
+  }
+}

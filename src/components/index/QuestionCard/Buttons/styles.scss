@@ -5,15 +5,24 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
-  div.choice {
+  div.answer {
     border: 1px solid $button;
     border-radius: 50px;
     box-shadow: 2px 2px 5px $button;
     margin: 0px 5px 10px 5px;
     padding: 1px 10px;
     cursor: pointer;
+    transition: background-color .3s;
+    -webkit-transition: background-color .3s;
     &:hover {
       box-shadow: 2px 2px 5px $gray;
+    }
+    &.clicked-true {
+      background-color: $satan;
+      border: 1px solid $satan;
+      p {
+        color: white;
+      }
     }
     p {
       font-family: $din;

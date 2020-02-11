@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './styles.scss';
 
 import Buttons from './Buttons';
-import Results from './Results';
 
 class QuestionCard extends React.Component {
   constructor (props) {
@@ -19,7 +18,6 @@ class QuestionCard extends React.Component {
           </div>
           <div className='right-side'>
             <Buttons data={data} />
-            <Results data={data} />
           </div>
         </div>
         <p> {copy.Description} </p>
