@@ -16,7 +16,7 @@ class QuestionCard extends React.Component {
         <div className='container'>
           <div className='left-side'>
             <h5> {index} </h5>
-            <img className='embellish' src="./../media/embellish.svg" alt='embellishment'/>
+            <img className='embellish' src="https://www.politico.com/interactives/uploads/image-service/2020/2/14/4b1b6155a4.png" alt='embellishment'/>
             <h3> {data[0].Question} </h3>
           </div>
           <div className='right-side'>

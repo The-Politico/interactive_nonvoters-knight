@@ -63,10 +63,10 @@ class App extends React.Component {
         <div className='module-container'>
           { copy.modules.map(a =>
             <div className='module'>
-              <img src={a.URL} alt={`Cover for ${a.Hed}`} />
+              <img src={a.Img} alt={`Cover for ${a.Hed}`} />
               <h5> {a.FLAG} </h5>
-              <h3> {a.Hed} </h3>
-              <h4> By {a.By} </h4>
+              <h3><a href={a.URL}>{a.Hed}</a> </h3>
+              <h4> By <span className='name'>{a.By}</span> </h4>
             </div>
           )}
         </div>
