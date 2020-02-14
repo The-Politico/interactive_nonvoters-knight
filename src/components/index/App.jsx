@@ -15,18 +15,20 @@ class App extends React.Component {
   constructor(props){
     super(props);
   }
+  //         <Share subject={meta.pageName} shareTweet={content.social.twitter.share_tweet} />
 
   render() {
     const { copy, timestamp, data } = this.props;
 
     return (
       <div>
-        <Share subject={meta.pageName} shareTweet={content.social.twitter.share_tweet} />
 
-        <img className='topper' src="./media/topper.gif" alt='bouncing heads'/>
         <Section href={content.section.link}>{content.section.name}</Section>
         <Headline>{copy.Hedline}</Headline>
         <Dek>{copy.Dek}</Dek>
+
+        <img className='topper' src="./media/ledeart.png" alt='Lede art'/>
+
         <Info {...meta}/>
 
         <Markdown source={copy.Context} className='body' linkTarget='_blank' />
@@ -34,17 +36,40 @@ class App extends React.Component {
         <div className='sticky-container'>
           {
             copy.Questions.map((question, i) =>
-              <QuestionCard key={`key${i}`}
-                index={`Question ${i + 1} of ${copy.Questions.length}`}
-                data={data.filter(a => a.ID === question.ID)}
-                copy={question}
-              />
+              [2, 5, 7].includes(i) ?
+              <div>
+                <QuestionCard key={`key${i}`}
+                  index={`${i + 1}`}
+                  data={data.filter(a => a.ID === question.ID)}
+                  copy={question}
+                />
+              </div>
+              :
+              <div>
+                <Ad.Dynamic />
+                <QuestionCard key={`key${i}`}
+                  index={`${i + 1}`}
+                  data={data.filter(a => a.ID === question.ID)}
+                  copy={question}
+                />
+              </div>
             )
           }
         </div>
 
+        <Ad.Dynamic />
         <Markdown source={copy.Methodology} className='methodology' linkTarget='_blank' />
 
+        <div className='module-container'>
+          { copy.modules.map(a =>
+            <div className='module'>
+              <img src={a.URL} alt={`Cover for ${a.Hed}`} />
+              <h5> {a.FLAG} </h5>
+              <h3> {a.Hed} </h3>
+              <h4> By {a.By} </h4>
+            </div>
+          )}
+        </div>
       </div>
     );
   }

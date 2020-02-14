@@ -12,21 +12,42 @@ div.share {
 }
 p.category {
   margin-bottom: 0;
+  letter-spacing: 3px;
+  font-size: .9rem;
   a {
     color: $politico-red;
   }
 }
 
-p.dek {
-  margin-top: 0;
-  margin-bottom: 5px;
-  line-height: 1.2;
+div.headline h1 {
+    font-size: 4rem;
+    font-family: $jubilat;
+    line-height: 1.05;
+    padding-top: 0;
 }
 
-.info p {
-  font-family: $din;
-  a {
-    color: $satan;
+p.dek {
+  margin-top: 0;
+  margin-bottom: 25px;
+  line-height: 1.2;
+  font-size: 1.4rem;
+  color: $satan;
+  max-width: 800px;
+}
+
+.info {
+  margin-top: 24px;
+  p {
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-family: $din;
+    text-align: left;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    a {
+      color: $satan;
+      font-weight: lighter !important;
+    }
   }
 }
 
@@ -38,9 +59,12 @@ p.dek {
 
 
 img.topper {
-  width: 200px;
+  width: 1000px;
   margin: 0 auto 10px;
   display: block;
+  @media screen and (max-width: 1000px){
+    width: 100%;
+  }
 }
 
 div.methodology {
@@ -48,5 +72,45 @@ div.methodology {
   p {
     font-family: $din;
     font-size: 1rem;
+  }
+}
+
+div.module-container {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  @media screen and (max-width: 1200px){
+    width: 100%;
+  }
+  div.module {
+    width: 290px;
+    margin: 5px;
+    @media screen and (max-width: 600px){
+      width: 45%;
+    }
+    img {
+      width: 100%;
+      min-height: 150px;
+      background-color: $gray;
+    }
+    h5 {
+      font-weight: bold;
+      color: $politico-dark-red;
+      margin-top: 8px;
+      letter-spacing: .05px;
+    }
+    h3 {
+      padding-left: 0;
+      font-size: 1.1rem;
+      font-family: $jubilat;
+    }
+    h4 {
+      font-size: .8rem;
+      color: $satan;
+      font-weight: normal;
+      margin-top: 5px;
+    }
   }
 }

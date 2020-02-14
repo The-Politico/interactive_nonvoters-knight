@@ -20,6 +20,7 @@ class Page extends React.PureComponent {
   render() {
     return (
       <div className='story'>
+        <link rel="stylesheet" href="https://use.typekit.net/bvr3gvp.css" />
         <Head title={meta.pageName} social={content.social} publishPath={meta.publishPath} />
         <Navigation />
         <Ad.Banner />

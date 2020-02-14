@@ -1,18 +1,18 @@
 {
-  "name": "interactive_iowa-caucus-explainer",
+  "name": "interactive_quiz-voters-nonvoters",
   "version": "1.0.0",
-  "description": "Iowa Caucus 2020 | How they work | Why we still do them",
+  "description": "Quiz: What makes a voter and nonvoter?",
   "main": "index.js",
   "pib": {
     "template": "dynamic",
     "id": "V7xtaYoK",
-    "pageName": "Iowa Caucus 2020 | How they work | Why we still do them",
+    "pageName": "Quiz: What makes a voter and nonvoter?",
     "siteSection": "politics",
     "pageType": "interactives",
     "adUnitSection": "politics",
     "freePaidContent": "free",
     "opinion": false,
-    "publishPath": "interactives/2020/iowa-caucus-how-they-work/",
+    "publishPath": "interactives/2020/quiz-voters-nonvoters/",
     "published": "2020-01-16T10:00:00.094Z",
     "updated": null,
     "authors": [

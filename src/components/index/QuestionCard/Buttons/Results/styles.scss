@@ -7,7 +7,7 @@
   p.summary {
     margin-top: 10px;
     text-align: center;
-    font-family: $din;
+    font-family: $jubilat;
     span {
       font-weight: bold;
     }
@@ -15,8 +15,9 @@
   h4 {
     max-width: 450px;
     margin: 0 auto;
-    font-weight: normal;
+    font-weight: bold;
     margin-bottom: 0px;
+    font-family: $jubilat;
     @media screen and (max-width: 600px){
       width: 90%;
       font-size: 1.1rem;

@@ -2,29 +2,40 @@
 
 .component :global {
   div.container {
-    margin: 120px auto 50px;
+    margin: 80px auto 50px;
     border-radius: 5px;
     border: 1px solid $button;
+    //border-bottom: 2px solid $gop;
     box-shadow: 2px 2px 5px $button;
     max-width: 675px;
-    padding: 30px 20px 30px;
+    padding: 36px 20px 30px;
     @media screen and (max-width: 600px){
       width: 95%;
       padding: 30px 10px;
       margin: 100px auto 30px;
     }
     img {
-      width: 25px;
+      width: 80px;
       display: block;
-      margin: 0 auto 12px;
+      margin: -4px auto 8px;
+      transform: translateX(-2px);
     }
     h5 {
       text-align: center;
-      margin-bottom: 10px;
+      margin-bottom: 0px;
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: black;
+      font-family: $jubilat
+    }
+    hr {
+      width: 40px;
+      border-top: 2px solid $gop;
     }
     h3 {
       font-size: 1.6rem;
       text-align: center;
+      font-family: $jubilat;
       @media screen and (max-width: 600px){
         font-size: 1.4rem;
       }
