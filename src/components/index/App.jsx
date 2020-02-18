@@ -27,7 +27,7 @@ class App extends React.Component {
         <Headline>{copy.Hedline}</Headline>
         <Dek>{copy.Dek}</Dek>
 
-        <img className='topper' src="./media/ledeart.png" alt='Lede art'/>
+        <img className='topper' src="./media/ledeart.jpg" alt='Lede art'/>
 
         <Info {...meta}/>
 
