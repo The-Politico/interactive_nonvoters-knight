@@ -3,13 +3,13 @@ import { pib as meta } from 'package.json';
 
 export default {
   'fbook': {
-    'card_title': 'An illustrated guide to the Iowa caucuses',
-    'card_description': 'How they work and why we still do them',
+    'card_title': 'Quiz: Do you know what motivates people to vote or abstain?',
+    'card_description': 'See if your beliefs align more with voters or nonvoters.',
   },
   'twitter': {
-    'card_title': 'An illustrated guide to the Iowa caucuses',
-    'share_tweet': 'An illustrated guide to the Iowa caucuses: How they work and why we still do them',
-    'card_description': 'How they work and why we still do them',
+    'card_title': 'Quiz: Do you know what motivates people to vote or abstain?',
+    'share_tweet': 'Quiz: Do you know what motivates people to vote or abstain?',
+    'card_description': 'See if your beliefs align more with voters or nonvoters.',
   },
   'image': {
     'url': `https://www.politico.com/${path.join(meta.publishPath, 'media/share.jpg')}`,
