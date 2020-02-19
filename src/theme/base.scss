@@ -60,11 +60,19 @@ p.dek {
 
 img.topper {
   width: 1000px;
-  margin: 0 auto 10px;
+  margin: 0 auto 5px;
   display: block;
   @media screen and (max-width: 1000px){
     width: 100%;
   }
+}
+
+p.illo-byline {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: $din;
+  color: $gray;
+  font-size: .8rem;
 }
 
 div.methodology {

@@ -28,6 +28,7 @@ class App extends React.Component {
         <Dek>{copy.Dek}</Dek>
 
         <img className='topper' src="./media/ledeart.jpg" alt='Lede art'/>
+        <p className='illo-byline'> Illustration by Michelle Pereira </p>
 
         <Info {...meta}/>
 
